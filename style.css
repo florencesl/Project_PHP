@@ -1,0 +1,157 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    background-color: #ffcdd4;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 50px;
+    color: #e57d90;
+    letter-spacing: 2px; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #e57d90;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #f99aaa;
+}
+
+.content {
+    display: none;
+    padding: 20px;
+}
+
+.home-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.profile-photo:hover {
+    transform: scale(1.1);
+}
+
+.description {
+    padding-right: 20px;
+    text-align: center;
+}
+
+.description h2 {
+    color: #e57d90;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.description p {
+    font-size: 16px;
+}
+
+.description {
+    flex: 1; 
+    padding: 0 20px;
+}
+
+.photo-container {
+    flex: 1;
+    text-align: center;
+}
+
+.profile-photo:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.gallery {
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    gap: 15px; 
+}
+
+.gallery img {
+    width: 250px; 
+    height: 200px; 
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; 
+}
+
+.gallery img:hover {
+    transform: scale(1.05); 
+}
+
+.article {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.article h3 {
+    color: #e57d90;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+
+.contact-icons {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.9); 
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px;
+    border-radius: 50%; 
+}
+
+.contact-icons img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.contact-icons img:hover {
+    transform: scale(1.1); 
+}
+
+.contact-icons span {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #e57d90
+}
