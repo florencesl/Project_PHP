@@ -1,3 +1,10 @@
+<?php
+$db = mysqli_connect("localhost", "root", "", "web");
+
+$data = mysqli_query($db, "SELECT * FROM matakuliah");
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -20,7 +27,7 @@
         <div class="home-content">
             <div class="description"> 
                 <h2>Hello!</h2>
-                <p>I'm Florence Lowing, an 18-year-old engineering student who loves coffee too much.</p>
+                <p>My name is Florence Lowing, an 18-year-old engineering student who loves coffee too much.</p>
             </div>
             <div class="photo-container">
                 <img src="images/flo_almet.png" alt="Flo" class="profile-photo">
@@ -82,5 +89,23 @@
             </a>
         </div>
     <script src="script.js"></script>
+
     </body>
 </html>
+
+<table id="matakuliah">
+                <tr>
+                    <th>Matakuliah</th>
+                    <th>SKS</th>
+                    <th>Hari</th>
+                </tr>
+
+                <?php while ($row = mysqli_fetch_array($data)) : ?>
+                    <tr>
+                        <td><?= $row["Matakuliah"]; ?></td>
+                        <td><?= $row["SKS"]; ?></td>
+                        <td><?= $row["Hari"]; ?></td>
+                    </tr>
+                <?php endwhile; ?>
+</table>
+
